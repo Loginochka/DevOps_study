@@ -1,0 +1,13 @@
+#!/bin/bash
+# скрипт сравнения двух чисел и математическая операция над ними
+echo "Введите 2 числа"
+read ch1 ch2
+if [[ $ch1 -lt  $ch2 ]]; then
+echo "$ch1 меньше $ch2, вычитание невозможно"
+elif [[ $ch1 -gt $ch2 ]]; then
+v=$((ch1-ch2))
+echo "$ch1-$ch2=$v"
+else
+ym=$((ch1**2))
+echo "$ch1^$ch2=$ym"
+fi;
